@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPBS 我的世界服务器</title>
+    <style>
+        /* 重置浏览器的默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* 页面整体样式 */
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+
+        /* 每个分区的样式 */
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            scroll-snap-align: start;
+        }
+
+        /* 背景和内容区域 */
+        .section1 {
+            background: url('https://pic.imgdb.cn/item/676d72b1d0e0a243d4eb10c6.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .section2 {
+            background: url('https://pic.imgdb.cn/item/676d7381d0e0a243d4eb10e4.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .section3 {
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+
+        .section4 {
+            background-color: #2d2d2d;
+            color: white;
+            text-align: center;
+        }
+
+        h1, h2, p {
+            margin: 10px 0;
+        }
+
+        .button {
+            padding: 15px 30px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #e65c00;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="content">
+            <h1 class="logo">UPBS</h1>
+            <h2>欢迎来到UPBS我的世界服务器！</h2>
+            <p>探索无限可能，建造属于你的世界！</p>
+            <a href="#section2" class="button">立即加入</a>
+        </div>
+    </section>
+
+    <section class="section2" id="section2">
+        <div class="content">
+            <h2>服务器特色</h2>
+            <p>提供稳定的游戏环境，丰富的插件与活动，加入我们的大家庭！</p>
+            <a href="#section3" class="button">了解更多</a>
+        </div>
+    </section>
+
+    <section class="section3" id="section3">
+        <div class="content">
+            <h2>社区活动</h2>
+            <p>参与我们的定期活动，赢取丰厚奖励！</p>
+            <a href="#section4" class="button">查看活动</a>
+        </div>
+    </section>
+
+    <section class="section4" id="section4">
+        <div class="content">
+            <h2>联系我们</h2>
+            <p>有任何问题或建议，请随时联系我们。</p>
+            <footer>
+                <p>© 2024 UPBS 我的世界服务器 | 备案号：xxx-xxxx</p>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
