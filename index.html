@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPBS 我的世界服务器</title>
     <style>
-        /* 重置浏览器的默认样式 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         /* 页面整体样式 */
         body {
             font-family: Arial, sans-serif;
@@ -21,7 +21,6 @@
             height: 100%;
         }
 
-        /* 每个分区的样式 */
         section {
             width: 100%;
             height: 100vh;
@@ -33,22 +32,23 @@
 
         /* 背景和内容区域 */
         .section1 {
-            background: url('https://pic.imgdb.cn/item/676d74ead0e0a243d4eb1107.jpg') no-repeat center center;
+            background: url('https://pic.imgdb.cn/item/676e564cd0e0a243d4eb4657.jpg') no-repeat center center;
             background-size: cover;
-            color: white;
+            color: rgb(255, 255, 255);
             text-align: center;
         }
 
         .section2 {
-            background: url('https://pic.imgdb.cn/item/676d7514d0e0a243d4eb110e.jpg') no-repeat center center;
+            background: url('https://pic.imgdb.cn/item/676e6034d0e0a243d4eb56ff.jpg') no-repeat center center;
             background-size: cover;
-            color: white;
+            color: rgb(255, 255, 255);
             text-align: center;
         }
 
         .section3 {
-            background-color: #f5f5f5;
-            color: #333;
+            background: url('https://pic.imgdb.cn/item/676e4ea4d0e0a243d4eb3f03.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
             text-align: center;
         }
 
@@ -56,9 +56,10 @@
             background-color: #2d2d2d;
             color: white;
             text-align: center;
+            padding: 50px 20px;
         }
 
-        h1, h2, p {
+        h2, p {
             margin: 10px 0;
         }
 
@@ -69,7 +70,8 @@
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-top: 30px;
+            display: inline-block;
         }
 
         .button:hover {
@@ -94,15 +96,50 @@
             position: relative;
             width: 100%;
         }
+
+        /* 联系方式列表 */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        ul li a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: #e65c00;
+            text-decoration: underline;
+        }
+
+        /* 微信二维码 */
+        .wechat-qrcode {
+            margin-top: 30px;
+        }
+
+        .wechat-qrcode img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
+
 <body>
     <section class="section1">
         <div class="content">
             <h1 class="logo">UPBS</h1>
             <h2>欢迎来到UPBS我的世界服务器！</h2>
             <p>探索无限可能，建造属于你的世界！</p>
-            <a href="#section2" class="button">立即加入</a>
+            <a href="join.html" class="button">立即加入</a>
+            <a href="newyear.html" class="button">🎉跨年活动🎉</a>
         </div>
     </section>
 
@@ -110,7 +147,7 @@
         <div class="content">
             <h2>服务器特色</h2>
             <p>提供稳定的游戏环境，丰富的插件与活动，加入我们的大家庭！</p>
-            <a href="#section3" class="button">了解更多</a>
+            <a href="newyear.html" class="button">了解更多</a>
         </div>
     </section>
 
@@ -118,7 +155,7 @@
         <div class="content">
             <h2>社区活动</h2>
             <p>参与我们的定期活动，赢取丰厚奖励！</p>
-            <a href="#section4" class="button">查看活动</a>
+            <a href="newyear.html" class="button">🎉跨年活动🎉</a>
         </div>
     </section>
 
@@ -126,10 +163,26 @@
         <div class="content">
             <h2>联系我们</h2>
             <p>有任何问题或建议，请随时联系我们。</p>
+            
+            <!-- 联系信息 -->
+            <ul>
+                <li><strong>邮箱：</strong><a href="mailto:upbsminecraft@outlook.com">upbsminecraft@outlook.com</a></li>
+                <!-- <li><strong>电话：</strong><a href="tel:+8613983963690">+86 139 8396 3690</a></li> -->
+                <li><strong>微信(腐竹)：</strong><span>FXY-114514</span></li>
+                <li><strong>微信(负责人)：</strong><span>wyjdd1803</span></li>
+            </ul>
+    
+            <!-- 微信二维码
+            <div class="wechat-qrcode">
+                <p>扫描二维码，加入我们的微信群:</p>
+                <img src="https:" alt="微信二维码" width="150">
+            </div> -->
+    
             <footer>
                 <p>© 2024 UPBS 我的世界服务器 | 备案号：xxx-xxxx</p>
             </footer>
         </div>
     </section>
 </body>
+
 </html>
